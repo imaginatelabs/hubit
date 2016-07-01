@@ -1,6 +1,17 @@
+require 'thor'
+
 require 'hubit/version'
+require 'commands/init'
 
 # Hubit entry point of program
 module Hubit
-  # Your code goes here...
+  class Hubit < Thor
+    desc 'version', 'version number of hubit'
+    def version
+      puts VERSION.to_s
+    end
+
+    desc 'init SUBCOMMAND ARGS', 'blah'
+    subcommand 'init', Init
+  end
 end

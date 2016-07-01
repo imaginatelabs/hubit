@@ -25,5 +25,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rspec', '~> 3.0'
   spec.add_development_dependency 'rubocop', '~> 0.41'
 
-  #  spec.add_runtime_dependency 'example', '~> 1.1', '>= 1.1.4'
+  spec.add_runtime_dependency 'thor', '~> 0.19'
+  spec.add_runtime_dependency 'octokit', '~> 4.3'
 end
